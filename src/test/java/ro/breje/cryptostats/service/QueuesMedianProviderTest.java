@@ -7,7 +7,7 @@ import ro.breje.cryptostats.service.impl.QueuesMedianProvider;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MedianProviderTest {
+public class QueuesMedianProviderTest {
 
     private QueuesMedianProvider medianProvider;
 

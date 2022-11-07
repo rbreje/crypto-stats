@@ -1,6 +1,6 @@
 package ro.breje.cryptostats.model;
 
-public interface BeMap<V> {
+public interface SimpleDictionary<V> {
 
     int size();
 

@@ -3,7 +3,7 @@ package ro.breje.cryptostats.repository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Repository;
-import ro.breje.cryptostats.model.BeMap;
+import ro.breje.cryptostats.model.SimpleDictionary;
 import ro.breje.cryptostats.model.BinanceSymbol;
 import ro.breje.cryptostats.model.Payload;
 import ro.breje.cryptostats.model.response.SymbolDataResponse;
@@ -22,16 +22,16 @@ public class AppRepository {
     private ApplicationContext context;
 
     @Autowired
-    private BeMap<String> symbolsMedian;
+    private SimpleDictionary<String> symbolsMedian;
 
     @Autowired
-    private BeMap<String> symbolLatestPrice;
+    private SimpleDictionary<String> symbolLatestPrice;
 
     @Autowired
     private Set<String> symbolsSet;
 
     @Autowired
-    private BeMap<IMedianProvider> medianServiceMap;
+    private SimpleDictionary<IMedianProvider> medianServiceMap;
 
     public List<String> getAllSymbols() {
         return symbolsSet.stream().collect(Collectors.toList());

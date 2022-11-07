@@ -2,6 +2,7 @@ package ro.breje.cryptostats.model;
 
 import com.google.gson.annotations.SerializedName;
 
+// TODO: do something regarding getters/setters
 public class Payload {
 
     @SerializedName("e")

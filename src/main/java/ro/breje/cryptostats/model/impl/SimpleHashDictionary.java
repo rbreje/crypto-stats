@@ -1,6 +1,6 @@
 package ro.breje.cryptostats.model.impl;
 
-import ro.breje.cryptostats.model.BeMap;
+import ro.breje.cryptostats.model.SimpleDictionary;
 
 import java.util.List;
 import java.util.Objects;
@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-public class BeHashMap<V> implements BeMap<V> {
+public class SimpleHashDictionary<V> implements SimpleDictionary<V> {
 
     private static final int INITIAL_SIZE = 16;
 

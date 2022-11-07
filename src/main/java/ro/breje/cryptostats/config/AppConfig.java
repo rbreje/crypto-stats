@@ -8,8 +8,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
-import ro.breje.cryptostats.model.BeMap;
-import ro.breje.cryptostats.model.impl.BeHashMap;
+import ro.breje.cryptostats.model.SimpleDictionary;
+import ro.breje.cryptostats.model.impl.SimpleHashDictionary;
 import ro.breje.cryptostats.model.request.RequestFactory;
 import ro.breje.cryptostats.model.request.impl.BinanceRequestFactory;
 import ro.breje.cryptostats.service.IMedianProvider;
@@ -68,8 +68,8 @@ public class AppConfig {
 
     @Bean
     @Scope("prototype")
-    public BeMap getBeMap() {
-        return new BeHashMap();
+    public SimpleDictionary getBeMap() {
+        return new SimpleHashDictionary();
     }
 
     @Bean

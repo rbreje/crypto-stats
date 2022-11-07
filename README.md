@@ -1,3 +1,9 @@
+# Crypto Stats
+
+## Overview
+
+The scope of the project is to get familiarized with handling statistics from crypto area consuming an API of the well-know Binance Exchange platform. 
+
 # Start
 Use this command in order to start the app. Change the jdk location in necessary. JDK 11 is minimum required.
 

@@ -9,13 +9,13 @@ import ro.breje.cryptostats.controller.AppController;
 import ro.breje.cryptostats.exceptions.ControllerException;
 
 @SpringBootApplication
-public class BeApplication {
+public class StatsCryptoApplication {
 
     @Autowired
     private AppController appController;
 
     public static void main(String[] args) {
-        SpringApplication.run(BeApplication.class, args);
+        SpringApplication.run(StatsCryptoApplication.class, args);
     }
 
     @EventListener(ApplicationReadyEvent.class)

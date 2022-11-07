@@ -1,19 +1,19 @@
-package ro.breje.cryptostats.model;
+package ro.breje.cryptostats.model.impl;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ro.breje.cryptostats.model.impl.BeHashMap;
+import ro.breje.cryptostats.model.SimpleDictionary;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class BeHashMapTest {
 
-    private BeHashMap myHashMap;
+    private SimpleDictionary<String> myHashMap;
 
     @BeforeEach
     public void setup() {
-        myHashMap = new BeHashMap();
+        myHashMap = new SimpleHashDictionary();
     }
 
     @Test
